@@ -110,11 +110,11 @@ namespace Unity.RenderStreaming
         [Header("Rotation Settings")]
         [Tooltip("X = Change in mouse position.\nY = Multiplicative factor for camera rotation.")]
         [SerializeField]
-        private AnimationCurve mouseSensitivityCurve = new AnimationCurve(new Keyframe(0f, 0.5f, 0f, 5f), new Keyframe(1f, 2.5f, 0f, 0f));
+        private AnimationCurve mouseSensitivityCurve = new AnimationCurve(new Keyframe(0f, 0f, 0f, 1f), new Keyframe(1f, 0.4f, 0f, 0f));
 
         [Tooltip("Time it takes to interpolate camera rotation 99% of the way to the target."), Range(0.001f, 1f)]
         [SerializeField]
-        private float rotationLerpTime = 0.01f;
+        private float rotationLerpTime = 0.1f;
 
         [Tooltip("Whether or not to invert our Y axis for mouse input to rotation.")]
         [SerializeField]
